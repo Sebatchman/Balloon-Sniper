@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Righteous&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	cursor: none;
+	overflow: hidden;
+	-webkit-user-select: none;
+  	-moz-user-select: none;
+ 	user-select: none;
+  	outline: none;
+  	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	user-select: none;
+}
+
+body {
+	background-image: url('https://static.vecteezy.com/system/resources/previews/002/303/107/non_2x/seamless-pattern-of-cartoon-brick-wall-in-coral-color-bright-texture-used-for-game-web-design-textile-paper-vector.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#scope {
+	position: absolute;
+	height: 40%;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	z-index: 3;
+	transition: 0.3s transform ease;
+	transform-origin: 100% 100%;
+}
+
+.flashing {
+	position: relative;
+	height: 100%;
+	background-color: white;
+	opacity: 0;
+	z-index: 1;
+	animation: flash linear 0.1s 1;
+}
+
+@keyframes flash {
+	0% {opacity: 0;}
+	50% {opacity: 0.6;}
+	100% {opacity: 0;}
+}
+
+.right-black {
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	background-color: black;
+	transform: translate(5%, -50%);
+	z-index: 3;
+}
+
+.left-black {
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	background-color: black;
+	transform: translate(-105%, -50%);
+	z-index: 3;
+}
+
+.top-black {
+	position: absolute;
+	width: 50%;
+	height: 150%;
+	transform: translate(-50%, -112%);
+	background-color: black;
+	z-index: 3;
+}
+
+.bottom-black {
+	position: absolute;
+	width: 50%;
+	height: 150%;
+	background-color: black;
+	transform: translate(-50%, 10.8%);
+	z-index: 3;
+}
+
+.blue-balloon {
+	position: absolute;
+	width: 5%;
+	height: 12%;
+	z-index: 1;
+}
+
+.green-balloon {
+	position: absolute;
+	width: 5%;
+	height: 12%;
+	z-index: 2;
+}
+
+.red-balloon {
+	position: absolute;
+	width: 5%;
+	height: 12%;
+	z-index: 1;
+}
+
+.yellow-balloon {
+	position: absolute;
+	width: 5%;
+	height: 12%;
+	z-index: 2;
+}
+
+.blue-balloon-2 {
+	position: absolute;
+	width: 5%;
+	height: 12%;
+	z-index: 0;
+	-webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.green-balloon-2 {
+	position: absolute;
+	width: 5%;
+	height: 12%;
+	z-index: 0;
+	-webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.red-balloon-2 {
+	position: absolute;
+	width: 5%;
+	height: 12%;
+	z-index: 0;
+	-webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.yellow-balloon-2 {
+	position: absolute;
+	width: 5%;
+	height: 12%;
+	z-index: 0;
+	-webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.gunshot-hole {
+	position: absolute;
+	width: 3%;
+	height: 5%;
+	transform: translate(-52%, -75%);
+	z-index: -1;
+}
+
+.skull-up {
+	position: absolute;
+	width: 3%;
+	height: 7%;
+	z-index: 1;
+	transform: translate(34%, 35%);
+	opacity: 0.5;
+}
+
+.skull-down {
+	position: absolute;
+	width: 3%;
+	height: 7%;
+	z-index: 0;
+	transform: translate(34%, 50%);
+	opacity: 0.5;
+}
+
+.blue-splash {
+	position: absolute;
+	width: 10%;
+	height: 15%;
+	z-index: -1;
+	opacity: 0;
+	animation: fadeOut linear 3s 1;
+	transform: translate(-25%, 10%);
+}
+
+.green-splash {
+	position: absolute;
+	width: 10%;
+	height: 18%;
+	z-index: -1;
+	opacity: 0;
+	animation: fadeOut linear 3s 1;
+	transform: translate(-25%, -10%);
+}
+
+.green-splash-2 {
+	position: absolute;
+	width: 10%;
+	height: 18%;
+	z-index: -1;
+	opacity: 0;
+	animation: fadeOut linear 3s 1;
+	transform: translate(-25%, 10%);
+}
+
+.red-splash {
+	position: absolute;
+	width: 10%;
+	height: 18%;
+	z-index: -1;
+	opacity: 0;
+	animation: fadeOut linear 3s 1;
+	transform: translate(-25%, 10%);
+}
+
+.yellow-splash {
+	position: absolute;
+	width: 10%;
+	height: 18%;
+	z-index: -1;
+	opacity: 0;
+	animation: fadeOut linear 3s 1;
+	transform: translate(-25%, -10%);
+}
+
+
+@keyframes fadeOut {
+	0% {opacity: 0.8;}
+	50% {opacity: 0.4;}
+	100% {opacity: 0;}
+}
+
+.blue-skull {
+	position: absolute;
+	width: 3%;
+	height: 7%;
+	transform: translate(34%, 35%);
+	opacity: 1;
+	z-index: -1;
+	animation: skullFlash linear 1.5s 1;
+}
+
+.red-skull {
+	position: absolute;
+	width: 3%;
+	height: 7%;
+	transform: translate(34%, 35%);
+	opacity: 1;
+	z-index: -1;
+	animation: skullFlash linear 1.5s 1;
+}
+
+.yellow-skull {
+	position: absolute;
+	width: 3%;
+	height: 7%;
+	transform: translate(34%, 50%);
+	opacity: 1;
+	z-index: -1;
+	animation: skullFlash linear 1.5s 1;
+}
+
+@keyframes skullFlash {
+	0% {opacity: 1;}
+	15% {opacity: 0.5;}
+	30% {opacity: 0;}
+	45% {opacity: 0.5;}
+	60% {opacity: 1;}
+	75% {opacity: 0.5;}
+	100% {opacity: 0.0;}
+}
+
+.start-button {
+	position: absolute;
+	top: 24%;
+	left: 30%;
+	height: 35%;
+	width: 40%;
+	z-index: 3;
+}
+
+.instructions {
+	position: absolute;
+	left: 3%;
+	top: 5%;
+	line-height: 2;
+	font-size: 1.5em;
+	color: #50FCFF;
+	font-family: 'Righteous', cursive;
+	z-index: 3;
+}
+
+#Timer {
+	position: absolute;
+	right: 0%;
+	top: 4%;
+	height: 10%;
+	width: 10%;
+	color: #50FCFF;
+	font-family: 'Righteous', cursive;
+	font-size: 3em;
+	z-index: 3;
+	pointer-events: none;
+}
+
+#scoreEl {
+	position: fixed;
+	color: #50FCFF;
+	font-family: 'Righteous', cursive;
+	font-size: 3em;
+	z-index: -2;
+	pointer-events: none;
+	opacity: 0;
+	top: 38;
+	left: 270;
+}
+
+#ballons-text {
+	position: fixed;
+	color: #50FCFF;
+	font-family: 'Righteous', cursive;
+	font-size: 3em;
+	z-index: -2;
+	pointer-events: none;
+	opacity: 0;
+	top: 35;
+	left: 50;
+}
+
+/*.score-wrapper {
+	position: absolute;
+	top: 3%;
+	left: 3%;
+}*/
+
+#final-score {
+	position: absolute;
+	color: #50FCFF;
+	font-family: 'Righteous', cursive;
+	font-size: 3em;
+	z-index: 3;
+	pointer-events: none;
+	opacity: 1;
+	left: 21%;
+	bottom: 25%;
+}
+
+
